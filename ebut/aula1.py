@@ -23,10 +23,10 @@ nav.switch_to.window(aba[1]) """
 
 #escrevendo
 nome= nav.find_element('id', 'username')
-nome.send_keys("04135905188")
+nome.send_keys("")
 
 senha= nav.find_element('id', 'password')
-senha.send_keys('12345678')
+senha.send_keys('')
 #clicar
 login.click()
 
