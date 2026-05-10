@@ -35,6 +35,3 @@ matricula=nav.find_element("xpath", "//div[contains(., 'RA: 48873')]//button")
 matricula.click()
 time.sleep(60)
 
-
-
-#scrol
