@@ -7,11 +7,19 @@ navegador.get("https://the-internet.herokuapp.com/add_remove_elements/?utm_sourc
 
 navegador.maximize_window()
 
-add = navegador.find_element("xpath", "//div[contains(., 'Add Element')]//button")
+add = navegador.find_element("xpath", "//button[text()= 'Add Element']")
 
 
-add.click()
-add.click()
-add.click()
+
+for i in range(3):
+    add.click()
+
+botoes = navegador.find_elements('class name', 'added-manually')
+
+botoes[1].click()
+
+
+
+print(f'Sobrou {len(navegador.find_elements('class name', 'added-manually'))} botoes')
 
 time.sleep(10)
